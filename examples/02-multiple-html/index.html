@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>
+      首页 - CSS/JS 规范实验
+    </title>
+    <link href="./assets/css/common.css" rel="stylesheet"/>
+    <link href="./assets/css/pages/home.css" rel="stylesheet"/>
+    <script defer="" src="./assets/js/common.js">
+    </script>
+    <script defer="" src="./assets/js/pages/home.js">
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-logo" href="./index.html">
+          WEM Demo
+        </a>
+        <button aria-controls="site-nav" aria-expanded="false" class="menu-toggle" type="button">
+          菜单
+        </button>
+        <nav aria-label="主导航" class="site-nav" id="site-nav">
+          <a aria-current="page" href="./index.html">
+            首页
+          </a>
+          <a href="./about.html">
+            关于
+          </a>
+          <a href="./products.html">
+            产品
+          </a>
+          <a href="./contact.html">
+            联系
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main">
+      <section class="section home-hero">
+        <div class="container">
+          <p class="home-hero__eyebrow">
+            Stage 02 · 多页面
+          </p>
+          <h1 class="page-title">
+            公共资源与页面资源分离
+          </h1>
+          <p class="lead">
+            同一个导航、同一套按钮样式可以用于全部页面。
+          </p>
+          <button class="site-button" data-demo-action="" type="button">
+            测试首页 JS
+          </button>
+          <p aria-live="polite" class="home-status" data-demo-status="">
+            等待交互
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        CSS / JS Assets Guide · 教学演示项目
+      </div>
+    </footer>
+  </body>
+</html>

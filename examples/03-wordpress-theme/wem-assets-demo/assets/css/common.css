@@ -1,0 +1,23 @@
+/* Shared design tokens and site components */
+:root { --brand:#651e7c; --ink:#263344; --bg:#f5f7fb; --line:#dae1e9; --max:1100px; }
+* { box-sizing:border-box; }
+body { margin:0; font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--ink); background:var(--bg); }
+a { color:inherit; }
+.container { width:min(100% - 36px,var(--max)); margin-inline:auto; }
+.site-header { background:#fff; border-bottom:1px solid var(--line); }
+.site-header__inner { display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:76px; }
+.site-logo { font-weight:800; color:var(--brand); font-size:23px; text-decoration:none; }
+.site-nav { display:flex; gap:20px; align-items:center; }
+.site-nav a { text-decoration:none; }
+.site-nav a:hover,.site-nav a[aria-current="page"] { color:var(--brand); }
+.menu-toggle { display:none; border:1px solid var(--line); border-radius:6px; background:white; padding:7px 12px; cursor:pointer; }
+.site-main { min-height:60vh; }
+.section { padding:55px 0; }
+.page-title { margin:0 0 12px; font-size:clamp(30px,5vw,46px); line-height:1.2; }
+.lead { max-width:670px; color:#506176; }
+.card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:30px; }
+.card { background:white; border:1px solid var(--line); border-radius:12px; padding:22px; }
+.card h2 { margin:0 0 8px; font-size:20px; }
+.site-button { display:inline-block; background:var(--brand); color:white; text-decoration:none; border:0; border-radius:6px; padding:10px 18px; cursor:pointer; }
+.site-footer { border-top:1px solid var(--line); padding:25px 0; color:#637084; background:white; }
+@media (max-width:700px) { .menu-toggle { display:inline-block; } .site-header__inner { flex-wrap:wrap; padding:12px 0; } .site-nav { width:100%; display:none; flex-direction:column; align-items:flex-start; gap:10px; padding:10px 0; } .site-nav.is-open { display:flex; } .card-grid { grid-template-columns:1fr; } .section { padding:36px 0; } }

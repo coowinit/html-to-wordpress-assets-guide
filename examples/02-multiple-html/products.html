@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>
+      产品 - CSS/JS 规范实验
+    </title>
+    <link href="./assets/css/common.css" rel="stylesheet"/>
+    <link href="./assets/css/pages/products.css" rel="stylesheet"/>
+    <script defer="" src="./assets/js/common.js">
+    </script>
+    <script defer="" src="./assets/js/pages/products.js">
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-logo" href="./index.html">
+          WEM Demo
+        </a>
+        <button aria-controls="site-nav" aria-expanded="false" class="menu-toggle" type="button">
+          菜单
+        </button>
+        <nav aria-label="主导航" class="site-nav" id="site-nav">
+          <a href="./index.html">
+            首页
+          </a>
+          <a href="./about.html">
+            关于
+          </a>
+          <a aria-current="page" href="./products.html">
+            产品
+          </a>
+          <a href="./contact.html">
+            联系
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main">
+      <section class="section">
+        <div class="container">
+          <h1 class="page-title">
+            产品
+          </h1>
+          <p class="products-note">
+            筛选功能只在产品页加载。
+          </p>
+          <button aria-pressed="true" class="site-button" data-filter="all" type="button">
+            全部
+          </button>
+          <button aria-pressed="false" class="site-button" data-filter="decking" type="button">
+            地板
+          </button>
+          <button aria-pressed="false" class="site-button" data-filter="cladding" type="button">
+            墙板
+          </button>
+          <div class="card-grid" data-product-grid="">
+            <article class="card" data-category="decking">
+              <h2>
+                Decking A
+              </h2>
+            </article>
+            <article class="card" data-category="cladding">
+              <h2>
+                Cladding B
+              </h2>
+            </article>
+            <article class="card" data-category="decking">
+              <h2>
+                Decking C
+              </h2>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        CSS / JS Assets Guide · 教学演示项目
+      </div>
+    </footer>
+  </body>
+</html>

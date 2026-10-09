@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>
+      联系 - CSS/JS 规范实验
+    </title>
+    <link href="./assets/css/common.css" rel="stylesheet"/>
+    <link href="./assets/css/pages/contact.css" rel="stylesheet"/>
+    <script defer="" src="./assets/js/common.js">
+    </script>
+    <script defer="" src="./assets/js/pages/contact.js">
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-logo" href="./index.html">
+          WEM Demo
+        </a>
+        <button aria-controls="site-nav" aria-expanded="false" class="menu-toggle" type="button">
+          菜单
+        </button>
+        <nav aria-label="主导航" class="site-nav" id="site-nav">
+          <a href="./index.html">
+            首页
+          </a>
+          <a href="./about.html">
+            关于
+          </a>
+          <a href="./products.html">
+            产品
+          </a>
+          <a aria-current="page" href="./contact.html">
+            联系
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main">
+      <section class="section">
+        <div class="container">
+          <h1 class="page-title">
+            联系我们
+          </h1>
+          <form class="contact-form" data-contact-form="">
+            <label>
+              称呼
+              <input name="name" required=""/>
+            </label>
+            <label>
+              留言
+              <textarea name="message" required=""></textarea>
+            </label>
+            <button class="site-button" type="submit">
+              本地验证
+            </button>
+            <p data-form-status="" role="status">
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        CSS / JS Assets Guide · 教学演示项目
+      </div>
+    </footer>
+  </body>
+</html>
